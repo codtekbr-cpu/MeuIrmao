@@ -12,15 +12,26 @@
             font-family: 'Inter', sans-serif;
         }
         
+        /* Custom Scrollbar */
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 5px;
         }
         ::-webkit-scrollbar-track {
-            background: #fafafa;
+            background: #0a0a0a;
         }
         ::-webkit-scrollbar-thumb {
-            background: #a3a3a3;
-            border-radius: 10px;
+            background: linear-gradient(180deg, #ffffff 0%, #737373 100%);
+            border-radius: 100px;
+            transition: background 0.3s ease;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffffff;
+        }
+
+        /* Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #737373 #0a0a0a;
         }
 
         @keyframes animationIn { 
