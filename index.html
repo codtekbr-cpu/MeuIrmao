@@ -1,4 +1,6 @@
-<html lang="pt-BR" class="scroll-smooth"><head>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Freitas | Fotógrafo</title>
@@ -11,19 +13,22 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 5px;
         }
+
         ::-webkit-scrollbar-track {
             background: #0a0a0a;
         }
+
         ::-webkit-scrollbar-thumb {
             background: linear-gradient(180deg, #ffffff 0%, #737373 100%);
             border-radius: 100px;
             transition: background 0.3s ease;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #ffffff;
         }
@@ -34,39 +39,57 @@
             scrollbar-color: #737373 #0a0a0a;
         }
 
-        @keyframes animationIn { 
-            0% { opacity: 0; transform: translateY(20px); filter: blur(4px); } 
-            100% { opacity: 1; transform: translateY(0); filter: blur(0px); } 
+        @keyframes animationIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+                filter: blur(4px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                filter: blur(0px);
+            }
         }
 
         .animate-on-scroll {
             opacity: 0;
         }
+
         .animate-on-scroll.animate {
             animation: animationIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
 </head>
+
 <body class="antialiased selection:bg-neutral-900 selection:text-white overflow-x-hidden text-neutral-900 bg-[#fafafa]">
-    
+
     <!-- Noise Texture -->
-    <div class="fixed inset-0 pointer-events-none z-[100] opacity-[0.02] mix-blend-multiply" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+    <div class="fixed inset-0 pointer-events-none z-[100] opacity-[0.02] mix-blend-multiply"
+        style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');">
+    </div>
 
     <!-- Header -->
-    <header class="fixed top-0 inset-x-0 z-50 bg-[#fafafa]/80 backdrop-blur-md border-b border-neutral-200/50 transition-all duration-300">
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-[#fafafa]/80 backdrop-blur-md border-b border-neutral-200/50 transition-all duration-300">
         <div class="max-w-[1400px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
             <a href="#" class="text-xl font-semibold tracking-tight text-neutral-900 flex items-center gap-2">
                 <i data-lucide="aperture" stroke-width="1.5" class="w-6 h-6"></i>
                 Gabriel Freitas
             </a>
-            
+
             <nav class="hidden md:flex items-center gap-8">
-                <a href="#portfolio" class="text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Portfólio</a>
-                <a href="#servicos" class="text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Serviços</a>
-                <a href="#sobre" class="text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Sobre</a>
+                <a href="#portfolio"
+                    class="text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Portfólio</a>
+                <a href="#servicos"
+                    class="text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Serviços</a>
+                <a href="#sobre"
+                    class="text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Sobre</a>
             </nav>
 
-            <a href="#contato" class="inline-flex items-center gap-2 bg-neutral-900 text-white px-5 py-2.5 text-sm font-medium rounded-full hover:bg-neutral-800 transition-all active:scale-95 shadow-sm">
+            <a href="#contato"
+                class="inline-flex items-center gap-2 bg-neutral-900 text-white px-5 py-2.5 text-sm font-medium rounded-full hover:bg-neutral-800 transition-all active:scale-95 shadow-sm">
                 Agendar Sessão
             </a>
         </div>
@@ -77,72 +100,86 @@
         <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden w-full min-h-[90vh] flex items-center">
             <div class="max-w-[1400px] mx-auto px-6 lg:px-12 w-full relative z-10">
                 <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                    
+
                     <!-- Text Content -->
                     <div class="w-full lg:w-[55%] flex flex-col items-start order-2 lg:order-1 relative">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200/60 mb-8" style="animation: animationIn 1s ease-out 0.1s both;">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200/60 mb-8"
+                            style="animation: animationIn 1s ease-out 0.1s both;">
                             <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                            <span class="text-xs font-medium text-neutral-600 uppercase tracking-widest">Agenda Aberta 2024</span>
+                            <span class="text-xs font-medium text-neutral-600 uppercase tracking-widest">Agenda Aberta
+                                2026</span>
                         </div>
 
                         <h1 class="flex flex-col w-full relative mb-6">
-                            <span class="text-[4rem] sm:text-[5rem] lg:text-[6.5rem] leading-[0.9] font-medium text-neutral-900 tracking-tighter" style="animation: animationIn 1s ease-out 0.2s both;">
+                            <span
+                                class="text-[4rem] sm:text-[5rem] lg:text-[6.5rem] leading-[0.9] font-medium text-neutral-900 tracking-tighter"
+                                style="animation: animationIn 1s ease-out 0.2s both;">
                                 VISÃO
                             </span>
-                            <span class="text-[4rem] sm:text-[5rem] lg:text-[6.5rem] leading-[0.9] font-medium text-neutral-400 tracking-tighter" style="animation: animationIn 1s ease-out 0.3s both;">
+                            <span
+                                class="text-[4rem] sm:text-[5rem] lg:text-[6.5rem] leading-[0.9] font-medium text-neutral-400 tracking-tighter"
+                                style="animation: animationIn 1s ease-out 0.3s both;">
                                 AUTÊNTICA
                             </span>
                         </h1>
 
-                        <p class="text-xl lg:text-2xl text-neutral-500 font-normal leading-relaxed max-w-[30ch] mb-10" style="animation: animationIn 1s ease-out 0.4s both;">
+                        <p class="text-xl lg:text-2xl text-neutral-500 font-normal leading-relaxed max-w-[30ch] mb-10"
+                            style="animation: animationIn 1s ease-out 0.4s both;">
                             Capturando a essência através de retratos e narrativas visuais sofisticadas.
                         </p>
 
                         <div class="flex items-center gap-6" style="animation: animationIn 1s ease-out 0.5s both;">
-                            <a href="#portfolio" class="inline-flex items-center justify-center gap-2 bg-neutral-900 text-white px-8 py-4 text-sm font-medium rounded-full hover:bg-neutral-800 transition-all shadow-xl shadow-neutral-900/10">
+                            <a href="#portfolio"
+                                class="inline-flex items-center justify-center gap-2 bg-neutral-900 text-white px-8 py-4 text-sm font-medium rounded-full hover:bg-neutral-800 transition-all shadow-xl shadow-neutral-900/10">
                                 Ver Portfólio
                                 <i data-lucide="arrow-right" stroke-width="1.5" class="w-4 h-4"></i>
                             </a>
-                            <a href="#contato" class="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">
+                            <a href="#contato"
+                                class="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">
                                 Entrar em contato
                             </a>
                         </div>
                     </div>
 
                     <!-- Hero Image -->
-                    <div class="w-full lg:w-[45%] flex items-center justify-center order-1 lg:order-2" style="animation: animationIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;">
-                        <img
-                            src="img01.png"
-                            alt="Gabriel Freitas - Fotógrafo"
-                            class="w-full max-w-[480px] h-auto object-contain transition-transform duration-700 hover:scale-105"
-                        >
-                    </div>
-
+                    <div class="w-full lg:w-[45%] flex items-center justify-center order-1 lg:order-2"
+                        style="animation: animationIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;">
+                        <img src="img01.png" alt="Gabriel Freitas - Fotógrafo"
+                            class="w-[55%] sm:w-[60%] lg:w-full max-w-[480px] h-auto object-contain transition-transform duration-700 hover:scale-105">
                     </div>
 
                 </div>
+
+            </div>
             </div>
         </section>
 
         <!-- Statement Section -->
         <section class="py-24 bg-neutral-900 text-white relative overflow-hidden">
-            <div class="absolute inset-0 pointer-events-none opacity-[0.03]" style="background-image: linear-gradient(to right, rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,1) 1px, transparent 1px); background-size: 4rem 4rem;"></div>
-            
+            <div class="absolute inset-0 pointer-events-none opacity-[0.03]"
+                style="background-image: linear-gradient(to right, rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,1) 1px, transparent 1px); background-size: 4rem 4rem;">
+            </div>
+
             <div class="max-w-[1000px] mx-auto px-6 text-center relative z-10">
-                <i data-lucide="focus" stroke-width="1.5" class="w-8 h-8 mx-auto text-neutral-400 mb-8 animate-on-scroll"></i>
-                <h2 class="text-3xl md:text-5xl lg:text-6xl font-medium tracking-tighter leading-tight mb-8 animate-on-scroll" style="animation-delay: 0.1s;">
+                <i data-lucide="focus" stroke-width="1.5"
+                    class="w-8 h-8 mx-auto text-neutral-400 mb-8 animate-on-scroll"></i>
+                <h2 class="text-3xl md:text-5xl lg:text-6xl font-medium tracking-tighter leading-tight mb-8 animate-on-scroll"
+                    style="animation-delay: 0.1s;">
                     A fotografia não é sobre o equipamento. <br>
                     <span class="text-neutral-500">É sobre como enxergamos o mundo.</span>
                 </h2>
-                <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed animate-on-scroll" style="animation-delay: 0.2s;">
-                    Especializado em traduzir personalidade e propósito em imagens marcantes. Uma abordagem minimalista que coloca você no centro da narrativa.
+                <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed animate-on-scroll"
+                    style="animation-delay: 0.2s;">
+                    Especializado em traduzir personalidade e propósito em imagens marcantes. Uma abordagem minimalista
+                    que coloca você no centro da narrativa.
                 </p>
             </div>
         </section>
 
         <!-- Services Grid -->
         <section id="servicos" class="py-32 w-full">
-            <div class="max-w-[1400px] mx-auto px-6 lg:px-12 mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 animate-on-scroll">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 animate-on-scroll">
                 <div>
                     <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-neutral-900 mb-4">
                         Especialidades
@@ -153,44 +190,63 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-auto lg:h-[65vh] animate-on-scroll" style="animation-delay: 0.2s;">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-auto lg:h-[65vh] animate-on-scroll"
+                style="animation-delay: 0.2s;">
                 <!-- Service 1 -->
-                <div class="relative group overflow-hidden h-96 lg:h-full bg-neutral-100 border-r border-neutral-200/50">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Retratos" class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent"></div>
-                    
+                <div
+                    class="relative group overflow-hidden h-96 lg:h-full bg-neutral-100 border-r border-neutral-200/50">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&amp;w=800&amp;auto=format&amp;fit=crop"
+                        alt="Retratos"
+                        class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent">
+                    </div>
+
                     <div class="absolute bottom-0 left-0 p-8 z-20">
                         <span class="text-xs font-medium text-white/70 uppercase tracking-widest mb-3 block">01</span>
                         <h3 class="text-3xl font-medium text-white tracking-tight mb-2">Retratos</h3>
-                        <p class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p
+                            class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                             Para profissionais e marcas pessoais que buscam transmitir credibilidade.
                         </p>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="relative group overflow-hidden h-96 lg:h-full bg-neutral-100 border-r border-neutral-200/50">
-                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Comercial" class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent"></div>
-                    
+                <div
+                    class="relative group overflow-hidden h-96 lg:h-full bg-neutral-100 border-r border-neutral-200/50">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&amp;w=800&amp;auto=format&amp;fit=crop"
+                        alt="Comercial"
+                        class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent">
+                    </div>
+
                     <div class="absolute bottom-0 left-0 p-8 z-20">
                         <span class="text-xs font-medium text-white/70 uppercase tracking-widest mb-3 block">02</span>
                         <h3 class="text-3xl font-medium text-white tracking-tight mb-2">Comercial</h3>
-                        <p class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p
+                            class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                             Campanhas e lookbooks projetados para elevar o posicionamento da sua marca.
                         </p>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="relative group overflow-hidden h-96 lg:h-full bg-neutral-100 border-r border-neutral-200/50">
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Editorial" class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent"></div>
-                    
+                <div
+                    class="relative group overflow-hidden h-96 lg:h-full bg-neutral-100 border-r border-neutral-200/50">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&amp;w=800&amp;auto=format&amp;fit=crop"
+                        alt="Editorial"
+                        class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent">
+                    </div>
+
                     <div class="absolute bottom-0 left-0 p-8 z-20">
                         <span class="text-xs font-medium text-white/70 uppercase tracking-widest mb-3 block">03</span>
                         <h3 class="text-3xl font-medium text-white tracking-tight mb-2">Editorial</h3>
-                        <p class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p
+                            class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                             Narrativas visuais para revistas, publicações e projetos criativos.
                         </p>
                     </div>
@@ -198,13 +254,18 @@
 
                 <!-- Service 4 -->
                 <div class="relative group overflow-hidden h-96 lg:h-full bg-neutral-100">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Eventos" class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent"></div>
-                    
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&amp;w=800&amp;auto=format&amp;fit=crop"
+                        alt="Eventos"
+                        class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/20 to-transparent">
+                    </div>
+
                     <div class="absolute bottom-0 left-0 p-8 z-20">
                         <span class="text-xs font-medium text-white/70 uppercase tracking-widest mb-3 block">04</span>
                         <h3 class="text-3xl font-medium text-white tracking-tight mb-2">Eventos</h3>
-                        <p class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p
+                            class="text-sm text-white/80 max-w-[25ch] opacity-0 -translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                             Cobertura documental e discreta de momentos únicos e corporativos.
                         </p>
                     </div>
@@ -216,8 +277,10 @@
         <section id="portfolio" class="py-32 bg-white">
             <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
                 <div class="text-center mb-20 animate-on-scroll">
-                    <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-neutral-900 mb-6">Trabalhos Selecionados</h2>
-                    <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors border-b border-neutral-200 hover:border-neutral-900 pb-1">
+                    <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-neutral-900 mb-6">Trabalhos
+                        Selecionados</h2>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors border-b border-neutral-200 hover:border-neutral-900 pb-1">
                         Ver galeria completa
                         <i data-lucide="arrow-up-right" stroke-width="1.5" class="w-4 h-4"></i>
                     </a>
@@ -227,7 +290,9 @@
                     <div class="space-y-8 lg:space-y-12 animate-on-scroll" style="animation-delay: 0.1s;">
                         <a href="#" class="block group">
                             <div class="overflow-hidden bg-neutral-100 rounded-lg aspect-[4/5] mb-4">
-                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Work 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop"
+                                    alt="Work 1"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                             </div>
                             <div class="flex justify-between items-center">
                                 <h4 class="text-lg font-medium text-neutral-900">Campanha Minimal</h4>
@@ -236,7 +301,9 @@
                         </a>
                         <a href="#" class="block group">
                             <div class="overflow-hidden bg-neutral-100 rounded-lg aspect-square mb-4">
-                                <img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Work 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?q=80&amp;w=1000&amp;auto=format&amp;fit=crop"
+                                    alt="Work 2"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                             </div>
                             <div class="flex justify-between items-center">
                                 <h4 class="text-lg font-medium text-neutral-900">Editorial Urbano</h4>
@@ -244,11 +311,13 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <div class="space-y-8 lg:space-y-12 md:mt-24 animate-on-scroll" style="animation-delay: 0.3s;">
                         <a href="#" class="block group">
                             <div class="overflow-hidden bg-neutral-100 rounded-lg aspect-square mb-4">
-                                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Work 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&amp;w=1000&amp;auto=format&amp;fit=crop"
+                                    alt="Work 3"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                             </div>
                             <div class="flex justify-between items-center">
                                 <h4 class="text-lg font-medium text-neutral-900">Retratos Executivos</h4>
@@ -257,7 +326,9 @@
                         </a>
                         <a href="#" class="block group">
                             <div class="overflow-hidden bg-neutral-100 rounded-lg aspect-[4/5] mb-4">
-                                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Work 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop"
+                                    alt="Work 4"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                             </div>
                             <div class="flex justify-between items-center">
                                 <h4 class="text-lg font-medium text-neutral-900">Série Monocromática</h4>
@@ -275,41 +346,51 @@
                 <div class="mb-20 animate-on-scroll">
                     <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-neutral-900 mb-6">Metodologia</h2>
                     <p class="text-lg text-neutral-500 max-w-2xl leading-relaxed">
-                        Um processo desenhado para ser fluido, garantindo que o resultado final seja não apenas estético, mas estrategicamente alinhado com seu objetivo.
+                        Um processo desenhado para ser fluido, garantindo que o resultado final seja não apenas
+                        estético, mas estrategicamente alinhado com seu objetivo.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-6">
                     <!-- Step 1 -->
-                    <div class="bg-white border border-neutral-200/60 p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-on-scroll" style="animation-delay: 0.1s;">
-                        <div class="w-12 h-12 bg-neutral-100 text-neutral-900 rounded-xl flex items-center justify-center mb-8">
+                    <div class="bg-white border border-neutral-200/60 p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-on-scroll"
+                        style="animation-delay: 0.1s;">
+                        <div
+                            class="w-12 h-12 bg-neutral-100 text-neutral-900 rounded-xl flex items-center justify-center mb-8">
                             <i data-lucide="message-square" stroke-width="1.5" class="w-6 h-6"></i>
                         </div>
                         <h3 class="text-xl font-medium text-neutral-900 tracking-tight mb-4">Alinhamento</h3>
                         <p class="text-lg text-neutral-500 leading-relaxed">
-                            Começamos entendendo sua visão, referências e onde as imagens serão utilizadas. Criamos um moodboard direcional para a sessão.
+                            Começamos entendendo sua visão, referências e onde as imagens serão utilizadas. Criamos um
+                            moodboard direcional para a sessão.
                         </p>
                     </div>
 
                     <!-- Step 2 -->
-                    <div class="bg-white border border-neutral-200/60 p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-on-scroll" style="animation-delay: 0.2s;">
-                        <div class="w-12 h-12 bg-neutral-100 text-neutral-900 rounded-xl flex items-center justify-center mb-8">
+                    <div class="bg-white border border-neutral-200/60 p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-on-scroll"
+                        style="animation-delay: 0.2s;">
+                        <div
+                            class="w-12 h-12 bg-neutral-100 text-neutral-900 rounded-xl flex items-center justify-center mb-8">
                             <i data-lucide="camera" stroke-width="1.5" class="w-6 h-6"></i>
                         </div>
                         <h3 class="text-xl font-medium text-neutral-900 tracking-tight mb-4">A Sessão</h3>
                         <p class="text-lg text-neutral-500 leading-relaxed">
-                            Direção leve e assertiva. Crio um ambiente confortável para capturar expressões autênticas e naturais, otimizando o tempo.
+                            Direção leve e assertiva. Crio um ambiente confortável para capturar expressões autênticas e
+                            naturais, otimizando o tempo.
                         </p>
                     </div>
 
                     <!-- Step 3 -->
-                    <div class="bg-white border border-neutral-200/60 p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-on-scroll" style="animation-delay: 0.3s;">
-                        <div class="w-12 h-12 bg-neutral-100 text-neutral-900 rounded-xl flex items-center justify-center mb-8">
+                    <div class="bg-white border border-neutral-200/60 p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-on-scroll"
+                        style="animation-delay: 0.3s;">
+                        <div
+                            class="w-12 h-12 bg-neutral-100 text-neutral-900 rounded-xl flex items-center justify-center mb-8">
                             <i data-lucide="sliders-horizontal" stroke-width="1.5" class="w-6 h-6"></i>
                         </div>
                         <h3 class="text-xl font-medium text-neutral-900 tracking-tight mb-4">Pós-produção</h3>
                         <p class="text-lg text-neutral-500 leading-relaxed">
-                            Seleção criteriosa e tratamento de cor de alto nível. Entrega digital rápida em alta resolução e formatos otimizados.
+                            Seleção criteriosa e tratamento de cor de alto nível. Entrega digital rápida em alta
+                            resolução e formatos otimizados.
                         </p>
                     </div>
                 </div>
@@ -319,24 +400,28 @@
         <!-- CTA Section -->
         <section id="contato" class="py-32 bg-neutral-900 text-white overflow-hidden relative">
             <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&amp;w=2000&amp;auto=format&amp;fit=crop" alt="Background" class="w-full h-full object-cover opacity-20 grayscale">
+                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&amp;w=2000&amp;auto=format&amp;fit=crop"
+                    alt="Background" class="w-full h-full object-cover opacity-20 grayscale">
                 <div class="absolute inset-0 bg-neutral-900/80"></div>
             </div>
-            
+
             <div class="max-w-3xl mx-auto px-6 text-center relative z-10 animate-on-scroll">
                 <h2 class="text-4xl md:text-6xl font-medium tracking-tighter mb-8 leading-tight">
                     Pronto para elevar <br>
                     <span class="text-neutral-500">sua imagem?</span>
                 </h2>
                 <p class="text-lg text-neutral-400 max-w-xl mx-auto mb-12 leading-relaxed">
-                    Disponível para comissões e projetos comerciais. Entre em contato para discutirmos sua necessidade e receber um orçamento personalizado.
+                    Disponível para comissões e projetos comerciais. Entre em contato para discutirmos sua necessidade e
+                    receber um orçamento personalizado.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="mailto:contato@exemplo.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-neutral-900 px-8 py-4 text-sm font-medium rounded-full hover:bg-neutral-100 transition-all shadow-lg">
+                    <a href="mailto:contato@exemplo.com"
+                        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-neutral-900 px-8 py-4 text-sm font-medium rounded-full hover:bg-neutral-100 transition-all shadow-lg">
                         <i data-lucide="mail" stroke-width="1.5" class="w-4 h-4"></i>
                         Enviar E-mail
                     </a>
-                    <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent text-white border border-white/20 px-8 py-4 text-sm font-medium rounded-full hover:bg-white/5 transition-all">
+                    <a href="#"
+                        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent text-white border border-white/20 px-8 py-4 text-sm font-medium rounded-full hover:bg-white/5 transition-all">
                         <i data-lucide="message-circle" stroke-width="1.5" class="w-4 h-4"></i>
                         WhatsApp
                     </a>
@@ -349,7 +434,7 @@
     <footer class="bg-neutral-900 border-t border-white/10 pt-20 pb-10 text-white">
         <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                
+
                 <div class="lg:col-span-2">
                     <a href="#" class="text-2xl font-semibold tracking-tight text-white flex items-center gap-2 mb-6">
                         <i data-lucide="aperture" stroke-width="1.5" class="w-6 h-6"></i>
@@ -359,13 +444,16 @@
                         Fotógrafo especializado em retratos e projetos comerciais com estética limpa e atemporal.
                     </p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
                             <i data-lucide="instagram" stroke-width="1.5" class="w-4 h-4"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
                             <i data-lucide="linkedin" stroke-width="1.5" class="w-4 h-4"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
                             <i data-lucide="twitter" stroke-width="1.5" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -374,10 +462,14 @@
                 <div>
                     <h4 class="text-sm font-medium text-neutral-100 mb-6 tracking-wide">Navegação</h4>
                     <ul class="space-y-4">
-                        <li><a href="#portfolio" class="text-sm text-neutral-400 hover:text-white transition-colors">Portfólio</a></li>
-                        <li><a href="#servicos" class="text-sm text-neutral-400 hover:text-white transition-colors">Serviços</a></li>
-                        <li><a href="#sobre" class="text-sm text-neutral-400 hover:text-white transition-colors">Sobre</a></li>
-                        <li><a href="#contato" class="text-sm text-neutral-400 hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="#portfolio"
+                                class="text-sm text-neutral-400 hover:text-white transition-colors">Portfólio</a></li>
+                        <li><a href="#servicos"
+                                class="text-sm text-neutral-400 hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="#sobre"
+                                class="text-sm text-neutral-400 hover:text-white transition-colors">Sobre</a></li>
+                        <li><a href="#contato"
+                                class="text-sm text-neutral-400 hover:text-white transition-colors">Contato</a></li>
                     </ul>
                 </div>
 
@@ -385,13 +477,14 @@
                     <h4 class="text-sm font-medium text-neutral-100 mb-6 tracking-wide">Contato</h4>
                     <ul class="space-y-4">
                         <li>
-                            <a href="mailto:ola@gabrielfreitas.com" class="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
+                            <a href="mailto:ola@gabrielfreitas.com"
+                                class="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
                                 ola@gabrielfreitas.com
                             </a>
                         </li>
                         <li>
                             <span class="text-sm text-neutral-400 block">Goiânia, GO - Brasil</span>
-                            <span class="text-xs text-neutral-500 mt-1 block">Disponível para viagens</span>
+                            <span class="text-xs text-neutral-500 mt-1 block">Goianiense, disponível para viagens</span>
                         </li>
                     </ul>
                 </div>
@@ -409,7 +502,9 @@
             </div>
             <div class="pt-6 flex justify-center">
                 <p class="text-xs text-neutral-600">
-                    Site criado e construído por <a href="https://www.codtek.com.br" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors">www.codtek.com.br</a>
+                    Site criado e construído por <a href="https://www.codtek.com.br" target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-neutral-400 hover:text-white transition-colors">www.codtek.com.br</a>
                 </p>
             </div>
         </div>
@@ -465,25 +560,27 @@
         });
 
         // Intersection Observer for scroll animations
-        (function () { 
-            const once = true; 
-            if (!window.__inViewIO) { 
-                window.__inViewIO = new IntersectionObserver((entries) => { 
-                    entries.forEach((entry) => { 
-                        if (entry.isIntersecting) { 
-                            entry.target.classList.add("animate"); 
-                            if (once) window.__inViewIO.unobserve(entry.target); 
-                        } 
-                    }); 
-                }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }); 
-            } 
-            window.initInViewAnimations = function (selector = ".animate-on-scroll") { 
-                document.querySelectorAll(selector).forEach((el) => { 
-                    window.__inViewIO.observe(el); 
-                }); 
-            }; 
-            document.addEventListener("DOMContentLoaded", () => initInViewAnimations()); 
+        (function () {
+            const once = true;
+            if (!window.__inViewIO) {
+                window.__inViewIO = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("animate");
+                            if (once) window.__inViewIO.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+            }
+            window.initInViewAnimations = function (selector = ".animate-on-scroll") {
+                document.querySelectorAll(selector).forEach((el) => {
+                    window.__inViewIO.observe(el);
+                });
+            };
+            document.addEventListener("DOMContentLoaded", () => initInViewAnimations());
         })();
     </script>
 
-</body></html>
+</body>
+
+</html>
